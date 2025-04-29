@@ -52,10 +52,8 @@ main {
 }
 
 main > section#title > h1 {
-    display: block;
     margin-bottom: 7px;
     font-family: var(--font1);
-    text-decoration: none;
     color: var(--BSB_lightblue);
     text-shadow: 4px 4px 4px rgba(253, 0, 0, 0.758), 4px 4px 4px rgb(28, 4, 161);
     font-size: 20vw;    
