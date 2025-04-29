@@ -45,13 +45,14 @@ body {
 
 main {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    height: 90vh;
+    height: 95vh;
 }
 
 main > section#title > h1 {
+    display: block;
     margin-bottom: 7px;
 }
 
@@ -69,6 +70,7 @@ main > section#title > h1 > a:hover {
 }
 
 main > section#title > p {
+    display: block;
     font-family: var(--font2);
     color: var(--BSB_white);
     font-size: 1.2em;
@@ -110,7 +112,7 @@ main > section#login > form {
 }
 
 footer {
-    height: 10vh;
+    height: 5vh;
 }
 
 footer p {
