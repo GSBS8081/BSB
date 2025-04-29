@@ -91,9 +91,10 @@ main > section#login > nav {
 
 main > section#login > nav > a {
     text-decoration: none;
+    text-align: center;
     color: var(--BSB_white);
     font-family: var(--font2);
-    font-size: 2em;
+    font-size: 1.9em;
     padding: 7px;
     margin-left: 5px;
     margin-right: 5px;
