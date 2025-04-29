@@ -48,7 +48,7 @@ main {
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    height: 85vh;
+    height: 90%;
 }
 
 main > section#title > h1 {
@@ -112,7 +112,7 @@ main > section#login > form {
 }
 
 footer {
-    height: 15vh;
+    height: 10%;
 }
 
 footer p {
