@@ -48,7 +48,7 @@ main {
     flex-flow: column wrap;
     justify-content: center;
     align-content: center;
-    height: 90vh;
+    height: 70vh;
 }
 
 main > section#title > h1 {
@@ -110,7 +110,7 @@ main > section#login > form {
 }
 
 footer {
-    height: 10vh;
+    height: 30vh;
 }
 
 footer p {
