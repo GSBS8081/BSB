@@ -51,12 +51,16 @@ main {
     height: 90%;
 }
 
+main > section#title {
+    
+}
+
 main > section#title > h1 {
     margin-bottom: 7px;
     font-family: var(--font1);
     color: var(--BSB_lightblue);
     text-shadow: 4px 4px 4px rgba(253, 0, 0, 0.758), 4px 4px 4px rgb(28, 4, 161);
-    font-size: 20vw;    
+    font-size: 20vw;
 }
 
 /*
@@ -107,7 +111,7 @@ main > section#login > nav > a:hover{
     transition: 0.2s;
 }
 
-main > section#login > form {
+main > section#login > div#login-form {
     display: none;
 }
 
