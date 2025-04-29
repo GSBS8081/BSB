@@ -54,20 +54,19 @@ main {
 main > section#title > h1 {
     display: block;
     margin-bottom: 7px;
-}
-
-main > section#title > h1 > a {
     font-family: var(--font1);
     text-decoration: none;
     color: var(--BSB_lightblue);
     text-shadow: 4px 4px 4px rgba(253, 0, 0, 0.758), 4px 4px 4px rgb(28, 4, 161);
-    font-size: 15vw;    
+    font-size: 20vw;    
 }
 
+/*
 main > section#title > h1 > a:hover {
     font-size: 20vw;
     transition: 0.2s;
 }
+*/
 
 main > section#title > p {
     display: block;
@@ -98,7 +97,7 @@ main > section#login > nav > a {
     padding: 7px;
     margin-left: 5px;
     margin-right: 5px;
-    width: 170px;
+    width: 160px;
     border: solid 0.2px rgb(55, 47, 114);
     border-radius: 5px;
 }
