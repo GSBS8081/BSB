@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+:root {    
+    --font1: 'Sofia', 'Passion One', 'cursive';
+    --font2: 'Times New Roman', 'Times', 'serif';
+    --font3: Arial, Helvetica, sans-serif;
+    --font4: 'Crayon', sans-serif;
+    --BSB_purple: rgb(16, 13, 40);
+    --BSB_orange: rgb(240,155,36);
+    --BSB_blue: rgb(77,123,232);
+    --BSB_black: rgb(15, 13, 38);
+    --BSB_white: rgb(213, 211, 225);
+    --BSB_lightblue: rgb(199, 219, 235);
+}
+
+/* @font-face {
+    font-family: 'Campus';
+    src: url('../fonts/campus/CAMPUS\ PERSONAL\ USE.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sketch';
+    src: url('../fonts/sketchzone/Sketchzone.otf') format('opentype');
+}*/
+
+@font-face {
+    font-family: 'Crayon';
+    src: url('../fonts/crayonized/Crayonified\ Demo.ttf') format('truetype'), 
+         url('../fonts/crayonized/Crayonified\ Demo.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--BSB_purple);
+    height: 100vh;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    height: 90vh;
+}
+
+main > section#title > h1 {
+    margin-bottom: 7px;
+}
+
+main > section#title > h1 > a {
+    font-family: var(--font1);
+    text-decoration: none;
+    color: var(--BSB_lightblue);
+    text-shadow: 4px 4px 4px rgba(253, 0, 0, 0.758), 4px 4px 4px rgb(28, 4, 161);
+    font-size: 3.5em;    
+}
+
+main > section#title > h1 > a:hover {
+    font-size: 4em;
+    transition: 0.2s;
+}
+
+main > section#title > p {
+    font-family: var(--font2);
+    color: var(--BSB_white);
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+main > section#login {
+    color: var(--BSB_lightblue);
+}
+
+main > section#login > nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+main > section#login > nav > a {
+    text-decoration: none;
+    color: var(--BSB_white);
+    font-family: var(--font2);
+    font-size: 2em;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: solid 0.1px rgb(35, 29, 78);
+}
+
+main > section#login > nav > a:hover{
+    color: var(--BSB_purple);
+    background-color: var(--BSB_orange);
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+main > section#login > form {
+    display: none;
+}
+
+footer {
+    height: 10vh;
+}
+
+footer p {
+    font-family: var(--font2);
+    color: var(--BSB_white);
+    font-size: 1em;
+}
+
+footer > p > a {
+    color: var(--BSB_blue);
+    text-decoration: none;
+}

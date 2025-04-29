@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR" class="h-100">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="/static/images/UK/UK_flag_ico.png">
+        <link rel="stylesheet" media="screen and (min-width: 1050px)"  href="/static/css/home_screen.css" >
+        <title>@firstBSB</title>
+    </head>
+
+    <body class="text-bg-dark">
+
+        <header class="mycontainer_header">
+            <div class="box_header">
+                <img src="/static/images/BSB/bsb-white-wide-logo.png" alt="BSB Shield" style="width: 300px; height: auto;" />
+            </div>
+            
+            <div style="width: 50px;">
+                
+            </div>
+            
+            <div class="login-form">
+                <form action="" method="post">
+                  {{ form.as_p }}
+                  {% csrf_token %}
+                  <input type="hidden" name="next" value="{{ next }}" />
+                  <p><input type="submit" value="Log-in"></p>
+                </form>
+              </div>
+
+              <div class="box_header">
+                <nav>
+                    <a class="header_link" href="account/login/">sign up</a>
+                    <a class="header_link" href="#">contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="mycontainer_main">
+            <div>
+                <a id="firstBSB" href="/account/">@FirstBSB</a>
+                <p>Our community's network</p>
+            </div>        
+        </main>
+
+        
+
+        <footer class="mycontainer_footer">
+            <div>
+                <p>The British School of Brasilia - SHIS EQI 7/9, Lote F, Lago Sul, Brasília - DF, 71.615-370, Brazil <br />
+                    <a href="mailto:info@britishschoolbrasilia.org" style="color:rgba(247, 244, 244, 0.938);">info@britishschoolbrasilia.org</a></p>
+            </div>
+        </footer>
+
+    </body>
+</html>

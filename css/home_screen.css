@@ -1,0 +1,194 @@
+:root {
+    --purple_BSB: rgb(15, 13, 39);
+    --white_BSB: rgba(255, 255, 255, 1);
+    --orange_BSB: rgba(233, 151, 34, 0.938);
+    --black_BSB: rgba(0,0,0,1);
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+/* Configuração do elemento <body> */  
+
+.text-bg-dark {
+    color:rgba(247, 244, 244, 0.938);
+    background-color:RGBA(16,13,40,var(--bs-bg-opacity,1));
+}
+
+h1 {
+    font-family:'Lucida Handwriting', 'Garamond', 'Brush Script MT', 'serif';
+    font-size:4em;    
+}
+
+h3 {
+    font-family:'Times New Roman', 'Times', 'serif';
+    font-size:2em;    
+}
+
+.h-100 {
+    height:100%;
+}
+
+/* Configuração do elemento <header> */
+
+.container {
+    display: grid;
+    grid-template-columns: 30% 15% 15% auto;
+    height: 110px;
+    margin: 10px;
+}
+  
+.container .box {    
+    margin: 10px; 
+    text-align: left;
+    line-height: 30px;
+    font-size: 20px;        
+}
+
+.box {
+    display: grid;
+    height: 80px;
+}
+
+.mycontainer_header > p {
+    padding-top: 78px;
+    text-align: right;
+}
+
+.box_header > img {
+    width: 1220px;
+    height: auto;
+    position: relative;
+    float: right;
+}
+
+.mycontainer_header {
+    display:flex;
+    margin-bottom:300px;
+}
+
+    .mycontainer_header div {
+        width:25%;
+        float:left;
+    }
+
+    a.header_link {
+        text-decoration:none;
+        color:rgba(247, 244, 244, 0.938);
+        font-family:'Times New Roman', 'Times', 'serif';
+        font-size:2em;
+        padding:15px;
+    }
+    
+    a.header_link:link {
+        text-decoration:none;
+      }
+    
+    /* visited link */
+    a.header_link:visited {
+            text-decoration:none;
+    }
+    
+    /* mouse over link */
+    a.header_link:hover {
+        text-decoration:underline;
+        color:rgba(16,13,40,1);
+        background-color: rgba(233, 151, 34, 0.938);
+        box-shadow: 1px 1px rgba(247, 244, 244, 0.938);
+        font-size:2em;     
+        font-weight: bold;           
+      }
+    
+      /* selected link */
+    a.header_link:active {
+        text-decoration:none;
+        color:rgba(16,13,40,1);
+        background-color: rgba(233, 151, 34, 0.938);        
+      }
+
+/* Configuração do elemento <main> */
+
+.mycontainer_main {
+    display:flex;
+    margin-bottom: 500px;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+    .mycontainer_main div {
+        width:100%;
+    }
+
+    .mycontainer_main p {
+        font-size:1.4em;
+    }
+
+    a#firstBSB:link {
+        text-decoration:none;
+        color:rgb(199, 219, 235);
+        text-shadow: 5px 5px 10px rgb(253, 0, 0), 0 0 25px rgb(253,0,0), 0 0 5px rgb(28, 4, 161);
+        font-family:'Lucida Handwriting', 'Garamond', 'Brush Script MT', 'serif';
+        font-size:4em;    
+    }    
+    
+    a#firstBSB:visited {
+        text-decoration:none;
+        color:rgb(199, 219, 235);
+        text-shadow: 5px 5px 10px rgb(253, 0, 0), 0 0 25px rgb(253,0,0), 0 0 5px rgb(28, 4, 161);
+        font-family:'Lucida Handwriting', 'Garamond', 'Brush Script MT', 'serif';
+        font-size:4em;  
+    }
+    
+    a#firstBSB:hover {
+        color:rgb(199, 219, 235);
+        font-size:6em;
+        background-color:RGBA(16,13,40,var(--bs-bg-opacity,1));
+        text-shadow: 5px 5px 10px rgb(253, 0, 0), 0 0 25px rgb(253,0,0), 0 0 5px rgb(28, 4, 161);
+        font-family:'Lucida Handwriting', 'Garamond', 'Brush Script MT', 'serif';
+        text-decoration:none;
+        box-shadow:none;
+    }
+    
+    a#firstBSB:active {
+        text-decoration:none;
+    }
+
+.mycontainer_footer {
+    display:flex;    
+}
+
+.mycontainer_footer div {
+    width:100%;
+}
+
+/* Configuração do elemento footer> */
+
+.mycontainer_footer {
+    display:flex;    
+}
+
+    .mycontainer_footer div {
+        width:100%;
+        text-align:center;
+        position:fixed;
+        bottom: 10px;
+}
+
+.mycontainer_header img {
+        float: right;
+        padding-top:10px;
+        padding-right:15px;
+        width:160px;
+        height:auto;    
+}
+
+/* Configuração da imagem e dos links do <header> */
+
+.mycontainer_header nav {
+    padding-top:100px;
+    text-align:right;
+}
+
+/*  */ 
