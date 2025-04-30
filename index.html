@@ -6,6 +6,7 @@
     <title>@firstBSB</title>
     <link rel="stylesheet" href="css/home.css">
     <link rel="shortcut icon" href="images/UK/UK_flag_ico.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -15,22 +16,26 @@
         </section>
         <section id="login">
             <nav>
-                <a href="#" id="signup">sign up</a>
+                <a href="#" id="signin">sign in</a>
                 <a href="#">contact</a>
             </nav>            
         </section>
-        <section id="login-form">
-            <form action="" method="get">
-                <div id="user">
+        <section id="login-form">            
+            <form action="" method="get" autocomplete="off">
+                <div class="campo">
+                    <span class="material-icons">person</span>
                     <label for="username">Username</label>
-                    <input type="text" name="username" id="username" placeholder="Username" required autocomplete="off">
+                    <input type="text" name="username" id="username" placeholder="Username or e-mail" required>
                 </div>
-                <div id="psd">
+                <div class="campo">
+                    <span class="material-icons">vpn_key</span>
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="Password" required autocomplete="off">
+                    <input type="password" name="password" id="password" placeholder="Password" required>
                 </div>
-                <input type="submit" value="Login">
-            </form>
+                <input type="submit" value="Login">                
+                <a href="#">Google login</a>
+                <a href="#">Register</a>
+            </form>            
         </section>
     </main>
     <footer>
