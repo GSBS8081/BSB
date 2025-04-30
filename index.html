@@ -9,20 +9,28 @@
 </head>
 <body>
     <main>
-        <section id="title">
-            <h1>@firstBSB</h1>
+        <section id="title">            
+                <h1><a href="#">@firstBSB</a></h1>            
             <p>Our community's network</p>
         </section>
         <section id="login">
             <nav>
-                <a href="#" id="sigin">sign in</a>
+                <a href="#" id="signup">sign up</a>
                 <a href="#">contact</a>
-            </nav>
-            <div id="login-form">
-                <form action="" >
-                    TESTE
-                </form>
-            </div>
+            </nav>            
+        </section>
+        <section id="login-form">
+            <form action="" method="get">
+                <div id="user">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Username" required autocomplete="off">
+                </div>
+                <div id="psd">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Password" required autocomplete="off">
+                </div>
+                <input type="submit" value="Login">
+            </form>
         </section>
     </main>
     <footer>

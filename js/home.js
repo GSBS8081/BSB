@@ -1,7 +1,7 @@
-let sigin = window.document.querySelector("a#sigin");
-sigin.addEventListener("click", 
+let signup = window.document.querySelector("a#signup");
+signup.addEventListener("click", 
     function () {
-        let loginForm = window.document.querySelector("div#login-form");
+        let loginForm = window.document.querySelector("section#login-form");
         if (loginForm.style.display == "block") {
             loginForm.style.display = "none";
         }

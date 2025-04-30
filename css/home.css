@@ -61,18 +61,24 @@ main > section#title {
 
 main > section#title > h1 {
     margin-bottom: 7px;
+    /*font-family: var(--font1);
+    color: var(--BSB_lightblue);
+    text-shadow: 4px 4px 4px rgba(253, 0, 0, 0.758), 4px 4px 4px rgb(28, 4, 161);
+    font-size: 17vw;*/
+}
+
+main > section#title > h1 > a {
+    text-decoration: none;
     font-family: var(--font1);
     color: var(--BSB_lightblue);
     text-shadow: 4px 4px 4px rgba(253, 0, 0, 0.758), 4px 4px 4px rgb(28, 4, 161);
     font-size: 17vw;
 }
 
-/*
 main > section#title > h1 > a:hover {
     font-size: 20vw;
     transition: 0.2s;
 }
-*/
 
 main > section#title > p {
     display: block;
@@ -115,8 +121,26 @@ main > section#login > nav > a:hover{
     transition: 0.2s;
 }
 
-main > section#login > div#login-form {
+main > section#login-form {
     display: none;
+    margin-top: 20px;
+}
+
+main > section#login-form > form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    color: yellow;
+}
+
+input[type="text"], input[type="password"] {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
 }
 
 footer {
