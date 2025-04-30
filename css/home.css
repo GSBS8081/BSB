@@ -138,7 +138,7 @@ form > div.campo {
     display: block;
     background-color: rgba(215, 26, 58, 0.521);
     /*border: 2px solid #5f2c82;*/
-    width: 60%;
+    width: 250px;
     height: 40px;
     border-radius: 8px;
     margin: 5px 0px;
@@ -179,7 +179,7 @@ form > input[type="submit"], main > section#login-form > form > a {
     display: block;
     font-family: var(--font2);
     font-size: 1.2em;
-    width: 60%;
+    width: 240px;
     padding: 3px;
     /*height: 40px;*/
     background-color: var(--BSB_purple);
