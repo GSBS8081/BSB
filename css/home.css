@@ -170,6 +170,44 @@ div.campo > input {
 
 div.campo > input:focus-within {
     background-color: white;
+    font-family: var(--font2);
+}
+
+section#password_reset-form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+section#password_reset-form > h1 {
+    background-color: var(--BSB_orange);
+    color: var(--BSB_purple);
+    margin-top: 30px;
+    padding: 10px;    
+}
+
+section#password_reset-form > p {
+    color: var(--BSB_white);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: var(--font2);
+    font-size: 1.2em;
+}
+
+section#password_reset-form input[type="text"] {
+    margin-bottom: 50px;
+}
+
+section#password_reset-form input[type="submit"] {
+    margin-top: 20px;
+    width: 245px;
+}
+
+section#password_reset-form input[type="submit"]:hover {
+    background-color: rgba(215, 26, 58, 0.521);
+    color: var(--BSB_lightblue);
 }
 
 main > section#login-form > form > a {

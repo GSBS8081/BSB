@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static '../static/css/home.css' %}">
+    <link rel="shortcut icon" href="{% static '../static/images/UK/UK_flag_ico.png' %}" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section id="title">            
+            <h1><a href="#">@firstBSB</a></h1>            
+            <p>Our community's network</p>
+        </section>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy;BSB Alumni<br>
+            <a href="mailto:info@britishschoolbrasilia.org">info@xxx1.org</a>
+        </p>
+    </footer>
+    <script src="{% static '../static/js/home.js' %}"></script>    
+</body>
+</html>
