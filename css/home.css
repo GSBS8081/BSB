@@ -201,7 +201,7 @@ section#password_reset-form input[type="text"] {
 }
 
 section#password_reset-form input[type="submit"] {
-    margin-top: 20px;
+    margin-top: 10px;
     width: 245px;
 }
 
