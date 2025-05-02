@@ -173,6 +173,44 @@ div.campo > input:focus-within {
     font-family: var(--font2);
 }
 
+form > div.campo1 {
+    display: block;
+    background-color: rgba(215, 26, 58, 0.521);
+    /*border: 2px solid #5f2c82;*/
+    width: 250px;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo1 > label {
+    display: none;
+}
+
+div.campo1 > span {
+    color: var(--BSB_purple);
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 4px 2px 4px 4px;
+}
+
+div.campo1 > input {
+    background-color: var(--BSB_lightblue);
+    font-family: var(--font2);
+    font-size: 1em;
+    height: 97%;
+    width: calc(100% - 45px);
+    transform: translateY(-11px);
+    border-radius: 8px;
+    padding: 4px;
+}
+
+div.campo1 > input:focus-within {
+    background-color: white;
+    font-family: var(--font2);
+}
+
 section#password_reset-form {
     display: flex;
     flex-flow: column nowrap;
