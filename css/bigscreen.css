@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+main > section#title > h1 > a {
+    font-size: 136px;
+}
+
+    main > section#title > h1 > a:hover {
+        font-size: 140px;
+        transition: 0.2s;
+    }

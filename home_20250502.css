@@ -54,13 +54,17 @@ main {
     justify-content: center;
     align-content: center;
     height: 90%;
+    /*max-width: 850px;
+    flex-grow: 0;*/
 }
 
-main > section#title {    
-}
+/*main > section#title {
+        
+}*/
 
 main > section#title > h1 {
     margin-bottom: 7px;
+    
     /*font-family: var(--font1);
     color: var(--BSB_lightblue);
     text-shadow: 4px 4px 4px rgba(253, 0, 0, 0.758), 4px 4px 4px rgb(28, 4, 161);
@@ -167,47 +171,12 @@ div.campo > input {
     padding: 4px;
 }
 
+/*input#id_username {
+    placeholder: "Username";
+}*/
+
 div.campo > input:focus-within {
     background-color: white;
-    font-family: var(--font2);
-}
-
-form > div.campo1 {
-    display: block;
-    background-color: rgba(215, 26, 58, 0.521);
-    /*border: 2px solid #5f2c82;*/
-    width: 250px;
-    height: 40px;
-    border-radius: 8px;
-    margin: 5px 0px;
-}
-
-div.campo1 > label {
-    display: none;
-}
-
-div.campo1 > span {
-    color: var(--BSB_purple);
-    /*background-color: black;*/
-    font-size: 2em;
-    width: 40px;
-    padding: 4px 2px 4px 4px;
-}
-
-div.campo1 > input {
-    background-color: var(--BSB_lightblue);
-    font-family: var(--font2);
-    font-size: 1em;
-    height: 97%;
-    width: calc(100% - 45px);
-    transform: translateY(-11px);
-    border-radius: 8px;
-    padding: 4px;
-}
-
-div.campo1 > input:focus-within {
-    background-color: white;
-    font-family: var(--font2);
 }
 
 section#password_reset-form {
@@ -222,12 +191,12 @@ section#password_reset-form > h1 {
     background-color: var(--BSB_orange);
     color: var(--BSB_purple);
     margin-top: 30px;
+    margin-bottom: 30px;
     padding: 10px;    
 }
 
 section#password_reset-form > p {
     color: var(--BSB_white);
-    margin-top: 30px;
     margin-bottom: 20px;
     font-family: var(--font2);
     font-size: 1.2em;
@@ -245,6 +214,12 @@ section#password_reset-form input[type="submit"] {
 section#password_reset-form input[type="submit"]:hover {
     background-color: rgba(215, 26, 58, 0.521);
     color: var(--BSB_lightblue);
+}
+
+div.campo1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
 main > section#login-form > form > a {
@@ -293,3 +268,4 @@ footer > p > a {
     color: var(--BSB_blue);
     text-decoration: none;
 }
+
