@@ -1,0 +1,303 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+:root {    
+    --font1: 'Sofia', 'Passion One', 'cursive';
+    --font2: 'Times New Roman', 'Times', 'serif';
+    --font3: Arial, Helvetica, sans-serif;
+    --font4: 'Crayon', sans-serif;
+    --BSB_purple: rgb(16, 13, 40);
+    --BSB_orange: rgb(240,155,36);
+    --BSB_blue: rgb(77,123,232);
+    --BSB_black: rgb(15, 13, 38);
+    --BSB_white: rgb(213, 211, 225);
+    --BSB_lightblue: rgb(199, 219, 235);
+    --BSB_red: rgba(253, 0, 0, 0.758);
+}
+
+/* @font-face {
+    font-family: 'Campus';
+    src: url('../fonts/campus/CAMPUS\ PERSONAL\ USE.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sketch';
+    src: url('../fonts/sketchzone/Sketchzone.otf') format('opentype');
+}*/
+
+@font-face {
+    font-family: 'Crayon';
+    src: url('../fonts/crayonized/Crayonified\ Demo.ttf') format('truetype'), 
+         url('../fonts/crayonized/Crayonified\ Demo.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--BSB_purple);
+}
+body {
+    max-width: 850px;
+}
+
+div.principal {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;    
+    height: 100vh;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    flex: 0 0 800px;
+    height: 90%;
+}
+
+main > section#title {
+    
+}
+
+main > section#title > h1 {
+    margin-bottom: 7px;
+    /*font-family: var(--font1);
+    color: var(--BSB_lightblue);
+    text-shadow: 4px 4px 4px rgba(253, 0, 0, 0.758), 4px 4px 4px rgb(28, 4, 161);
+    font-size: 17vw;*/
+}
+
+main > section#title > h1 > a {
+    text-decoration: none;
+    font-family: var(--font1);
+    color: var(--BSB_lightblue);
+    text-shadow: 4px 4px 4px rgba(253, 0, 0, 0.758), 4px 4px 4px rgb(28, 4, 161);
+    font-size: 17vw;
+}
+
+main > section#title > h1 > a:hover {
+    font-size: 20vw;
+    transition: 0.2s;
+}
+
+main > section#title > p {
+    display: block;
+    font-family: var(--font1);
+    text-shadow: 1px 1px 1px rgba(253, 0, 0, 0.324), 1px 1px 1px rgba(28, 4, 161, 0.315);
+    color: var(--BSB_white);
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+main > section#login {
+    color: var(--BSB_lightblue);
+}
+
+main > section#login > nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+main > section#login > nav > a {
+    text-decoration: none;
+    text-align: center;
+    color: var(--BSB_white);
+    font-family: var(--font2);
+    font-size: 1.5em;
+    padding: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 150px;
+    border: solid 0.2px rgb(55, 47, 114);
+    border-radius: 5px;
+}
+
+main > section#login > nav > a:hover{
+    color: var(--BSB_purple);
+    background-color: var(--BSB_orange);
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+main > section#login-form {
+    display: none;
+    margin-top: 10px;
+}
+
+main > section#login-form > form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+form > div.campo {
+    display: block;
+    background-color: rgba(215, 26, 58, 0.521);
+    /*border: 2px solid #5f2c82;*/
+    width: 250px;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > span {
+    color: var(--BSB_purple);
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 4px 2px 4px 4px;
+}
+
+div.campo > input {
+    background-color: var(--BSB_lightblue);
+    font-family: var(--font2);
+    font-size: 1em;
+    height: 97%;
+    width: calc(100% - 45px);
+    transform: translateY(-11px);
+    border-radius: 8px;
+    padding: 4px;
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+    font-family: var(--font2);
+}
+
+form > div.campo1 {
+    display: block;
+    background-color: rgba(215, 26, 58, 0.521);
+    /*border: 2px solid #5f2c82;*/
+    width: 250px;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo1 > label {
+    display: none;
+}
+
+div.campo1 > span {
+    color: var(--BSB_purple);
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 4px 2px 4px 4px;
+}
+
+div.campo1 > input {
+    background-color: var(--BSB_lightblue);
+    font-family: var(--font2);
+    font-size: 1em;
+    height: 97%;
+    width: calc(100% - 45px);
+    transform: translateY(-11px);
+    border-radius: 8px;
+    padding: 4px;
+}
+
+div.campo1 > input:focus-within {
+    background-color: white;
+    font-family: var(--font2);
+}
+
+section#password_reset-form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+section#password_reset-form > h1 {
+    background-color: var(--BSB_orange);
+    color: var(--BSB_purple);
+    margin-top: 30px;
+    padding: 10px;    
+}
+
+section#password_reset-form > p {
+    color: var(--BSB_white);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: var(--font2);
+    font-size: 1.2em;
+}
+
+section#password_reset-form input[type="text"] {
+    margin-bottom: 50px;
+}
+
+section#password_reset-form input[type="submit"] {
+    margin-top: 10px;
+    width: 245px;
+}
+
+section#password_reset-form input[type="submit"]:hover {
+    background-color: rgba(215, 26, 58, 0.521);
+    color: var(--BSB_lightblue);
+}
+
+main > section#login-form > form > a {
+    text-decoration: none;
+}
+
+form > input[type="submit"], main > section#login-form > form > a {
+    display: block;
+    font-family: var(--font2);
+    font-size: 1.2em;
+    width: 240px;
+    padding: 3px;
+    /*height: 40px;*/
+    background-color: var(--BSB_purple);
+    color: var(--BSB_white);
+    border: solid 0.2px rgb(55, 47, 114);
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: 0.2s;
+}
+
+form > input[type="submit"]:hover, main > section#login-form > form > a:hover {
+    background-color: var(--BSB_orange);
+    color: var(--BSB_purple);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    height: 10%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer p {
+    font-family: var(--font2);
+    color: var(--BSB_white);
+    font-size: 1em;    
+    margin-bottom: 10px;
+}
+
+footer > p > a {
+    color: var(--BSB_blue);
+    text-decoration: none;
+}
